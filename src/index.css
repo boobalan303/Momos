@@ -1,0 +1,53 @@
+/* Container for horizontal scrolling */
+.overflow-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line wrapping */
+  padding: 1rem; /* Add padding */
+  scrollbar-width: thin; /* Firefox scrollbar width */
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+.overflow-container::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height */
+}
+
+.overflow-container::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded scrollbar thumb */
+}
+
+.overflow-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar thumb hover effect */
+}
+
+/* Columns Styling */
+.col {
+  min-width: 200px; /* Minimum width for columns */
+  text-align: center; /* Center align text */
+}
+
+
+/* Adjust carousel indicators (dots) */
+.custom-carousel .carousel-indicators {
+  position: static; /* Remove default positioning */
+  margin-top: 20px; /* Add space between carousel and indicators */
+  display: flex;
+  justify-content: center; /* Center-align dots */
+}
+
+.custom-carousel .carousel-indicators [data-bs-target] {
+  width: 12px; /* Adjust dot size */
+  height: 12px;
+  margin: 0 6px; /* Add spacing between dots */
+  background-color: #888; /* Dot color */
+  border-radius: 50%; /* Make dots circular */
+}
+
+.custom-carousel .carousel-indicators [data-bs-target].active {
+  background-color: #555; /* Active dot color */
+}
+
+.custom-carousel img {
+  max-height: 500px;
+  object-fit:fill;
+}

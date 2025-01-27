@@ -1,0 +1,17 @@
+/* Banner Styling */
+.banner {
+  background: url(D:\reactjs\cakeshop\src\pages\Image\Banner12.png) no-repeat center center/cover;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Card Hover Effects */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Shared Section Styling */
+.container {
+  max-width: 1200px;
+}
